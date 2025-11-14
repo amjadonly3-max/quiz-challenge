@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="intro-screen" id="intro">
+    <h1 class="title">🌟 Welcome to the Quiz Challenge 🌟</h1>
+    <p class="subtitle">Test your brain — unlock your inner genius!</p>
+    <button class="start-btn" id="startBtn">Start Game</button>
+  </div>
+
+  <div class="corner-names hidden" id="cornerNames">
+    <span class="left">CHRISANT</span>
+    <span class="right">Amjad</span>
+  </div>
+
+  <div class="level-screen hidden" id="levelScreen">
+    <h2>Select Difficulty</h2>
+    <div class="level-buttons">
+      <button class="level-btn" data-level="easy">🟢 Easy</button>
+      <button class="level-btn" data-level="medium">🟡 Medium</button>
+      <button class="level-btn" data-level="hard">🔴 Hard</button>
+      <button class="level-btn" data-level="expert">🟣 Expert</button> 
+    </div>
+  </div>
+
+  <div class="quiz-container hidden" id="quizContainer">
+    <div class="header-info">
+        <div id="progress-counter"></div>
+        <div id="timer"></div>
+    </div>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <button id="next-btn" class="btn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
